@@ -9,7 +9,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "run": "node ./parser.js",
+    "run": "node ./dist/Pickaxe.js",
     "parse": "npm run build; npm run run"
   },
   "author": "",

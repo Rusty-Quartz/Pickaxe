@@ -1,9 +1,9 @@
 import { parsePackets } from './Packet';
 
 // Info about the parser
-let quartzDir = '../';
+let quartzDir = `${__dirname}/../../`;
 let dataDir = `${__dirname}/../data`;
-let version = 'v0.0.1';
+let version = 'v0.1.0';
 
 // Handle command line args
 let args = process.argv;
