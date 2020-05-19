@@ -1,4 +1,5 @@
 import { parsePackets } from './Packet';
+import { addDefault } from './BlockstateDefault';
 
 // Info about the parser
 let quartzDir = `${__dirname}/../../`;
@@ -21,3 +22,4 @@ if(args.includes('-o') || args.includes('--outputDir') || args.includes('--quart
 }
 
 parsePackets(`${dataDir}/packet/`, quartzDir);
+addDefault(`${dataDir}/blockstate/`, quartzDir);
