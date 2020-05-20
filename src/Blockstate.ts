@@ -5,7 +5,10 @@ export const addDefault = (dataDir: string, quartzDir: string) => {
 
 	for (let block of Object.keys(input)) {
 		for (let state of input[block].states) {
-			if (state.default) input[block].default = state.id;
+			if (state.default) {
+				input[block].default = state.id;
+				state.default = undefined;
+			}
 		}
 	}
 
