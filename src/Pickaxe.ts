@@ -1,5 +1,5 @@
 import { parsePackets } from './Packet';
-import { addDefault } from './BlockstateDefault';
+import { addDefault } from './Blockstate';
 
 // Info about the parser
 let quartzDir = `${__dirname}/../../`;
